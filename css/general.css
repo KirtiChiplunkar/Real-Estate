@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 55%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+/* REUSABLE HELPER CLASSES */
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid--7-cols {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-2-by-2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-2-by-3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+
+.flexbox--v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container {
+  width: 134rem;
+  margin: 0 auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* COMMON STYLES */
+li {
+  list-style: none;
+}
+a:link,
+a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+.heading-primary {
+  font-size: 6rem;
+  color: #1f4b43;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+}
+
+.subheading {
+  font-size: 1.7rem;
+}
+
+::placeholder {
+  color: #1f4b43;
+  font-size: 1.7rem;
+}
+
+/* COMMON SPACING CLASSES */
+.top-margin-sm {
+  margin-top: 5rem !important;
+}
+.top-margin-ex-sm {
+  margin-top: 2.4rem;
+}
